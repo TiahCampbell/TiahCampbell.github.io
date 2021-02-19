@@ -69,7 +69,6 @@ body{
 }
 section {
     margin: 1em 0;
-    padding-top: 3em;
     min-height: 20em;
 }
 section > p {
@@ -82,10 +81,9 @@ main section img {
     width:150px;
 }
 #aboutMe {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(50, 150, 133, .8);
     height: auto;
     width: 100%;
@@ -99,7 +97,8 @@ main section img {
     color: ivory;
     border-radius: 7px;
     padding-left: 3em;
-    padding-top: 2em;
+    padding-right: 3em;
+    text-align: center;
 }
 #aboutMe ul {
     display: flex;
@@ -119,6 +118,7 @@ main section img {
     background: rgb(50, 150, 133, .8);
     border-radius: 7px;
     padding: 1em;
+    color: ivory;
 }
 #projects article img {
     width: 100%;
